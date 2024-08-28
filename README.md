@@ -2,7 +2,7 @@
 Linux高性能服务器编程，笔记及相关代码
 
 # 项目总结
-主要阅读了**《Linux 高性能服务器编程》游双**一书。
+主要阅读了 **《Linux 高性能服务器编程》游双**一书。
 ## Github 地址
 [bhu619/webserver](https://github.com/bhu619/webserver)<br />仓库里存放了笔记中的部分代码。
 ## 书本中的样例代码
