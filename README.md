@@ -1,24 +1,23 @@
-# Webserver
-Linux高性能服务器编程，笔记及相关代码
-
 # 项目总结
 主要阅读了 **《Linux 高性能服务器编程》游双**一书。
 
 ## 书本中的样例代码
 [实战 1：TCP通信实现（服务器端和客户端）](https://www.yuque.com/u39624144/zvaea9/xsil4chqwb5qqc0h#p2OYs)<br />
 [实战 2：使用 MSG_OOB 选项发送带外数据](https://www.yuque.com/u39624144/zvaea9/xsil4chqwb5qqc0h#rvyoz)<br />
-[实战 3：测试 UID 和 EUID 的区别](https://www.yuque.com/u39624144/zvaea9/uykylirmss5wl757#euBnM)<br />
-[实战 4：使用 setsid() 创建一个新的会话和进程组](https://www.yuque.com/u39624144/zvaea9/uykylirmss5wl757#a1Hsx)<br />
-[实战 5：select 调用同时接收普通数据和带外数据](https://www.yuque.com/u39624144/zvaea9/ypvqw1ip7m8g06iw#Higr8)<br />
-[实战 6：使用 SIGURG 信号检测带外数据是否到达](https://www.yuque.com/u39624144/zvaea9/lmeph1l89eka5260#iDHr9)<br />
-[实战 7：使用 SO_SNDTIMEO 选项设置定时](https://www.yuque.com/u39624144/zvaea9/yp17h7vn7pyqeg8u#yGpN7)<br />
-[实战 8：利用 alarm 函数周期性触发 SIGALRM 信号](https://www.yuque.com/u39624144/zvaea9/yp17h7vn7pyqeg8u#mQQlT)<br />
-[实战 9：利用 Libevent 库实现一个“Hello World”程序](https://www.yuque.com/u39624144/zvaea9/bn1zz8726fc80b0g#mo5Ik)<br />
-[实战 10：在进程间传递文件描述符](https://www.yuque.com/u39624144/zvaea9/uqu0tqep71gn5x5n#t0560)<br />
-[实战 11：死锁举例](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#zI94q)<br />
-[实战 12：使用条件变量模拟实现生产者—消费者问题](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#h3K6i)<br />
-[实战 13：多线程环境中，使用fork调用产生的死锁问题](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#AR15e)<br />
-[实战 14：在一个线程中统一处理所有信号](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#HA174)
+[实战 3：实现一个简单的 CGI 服务器](https://www.yuque.com/u39624144/zvaea9/coklc3naf35zmiqs#uhNNJ)<br />
+[实战 4：测试 UID 和 EUID 的区别](https://www.yuque.com/u39624144/zvaea9/uykylirmss5wl757#euBnM)<br />
+[实战 5：使用 setsid() 创建一个新的会话和进程组](https://www.yuque.com/u39624144/zvaea9/uykylirmss5wl757#a1Hsx)<br />
+[实战 6：select 调用同时接收普通数据和带外数据](https://www.yuque.com/u39624144/zvaea9/ypvqw1ip7m8g06iw#Higr8)<br />
+[实战 7：使用 SIGURG 信号检测带外数据是否到达](https://www.yuque.com/u39624144/zvaea9/lmeph1l89eka5260#iDHr9)<br />
+[实战 8：使用 SO_SNDTIMEO 选项设置定时](https://www.yuque.com/u39624144/zvaea9/yp17h7vn7pyqeg8u#yGpN7)<br />
+[实战 9：利用 alarm 函数周期性触发 SIGALRM 信号](https://www.yuque.com/u39624144/zvaea9/yp17h7vn7pyqeg8u#mQQlT)<br />
+[实战 10：利用 Libevent 库实现一个“Hello World”程序](https://www.yuque.com/u39624144/zvaea9/bn1zz8726fc80b0g#mo5Ik)<br />
+[实战 11：在进程间传递文件描述符](https://www.yuque.com/u39624144/zvaea9/uqu0tqep71gn5x5n#t0560)<br />
+[实战 12：死锁举例](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#zI94q)<br />
+[实战 13：使用条件变量模拟实现生产者—消费者问题](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#h3K6i)<br />
+[实战 14：多线程环境中，使用fork调用产生的死锁问题](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#AR15e)<br />
+[实战 15：在一个线程中统一处理所有信号](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#HA174)<br />
+[实战 16：用进程池实现简单的 CGI 服务器](https://www.yuque.com/u39624144/zvaea9/qulr4t6shwwh9kmo#eKrIS)
 
 ## 第一篇 前置知识 TCP / IP 协议
 [1. C++ TinyWebServer项目总结（1. 配置安装）](https://www.yuque.com/u39624144/zvaea9/cbr8n7reuf3rgw58?view=doc_embed)<br />
