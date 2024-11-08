@@ -9,7 +9,7 @@
 
 **我的 CSDN 博客：**[红茶川-CSDN博客](https://blog.csdn.net/Teriri_?spm=1000.2115.3001.5343)，上面同步更新了所有内容。
 
-# 《Linux 高性能服务器编程》学习笔记
+## 《Linux 高性能服务器编程》学习笔记
 ### 书本中的样例代码
 书中的部分样例代码，我都在笔记中给出了可以运行的代码，大家可以编译运行一下看看效果。
 
@@ -85,27 +85,6 @@
 
 ### 第三篇 高性能服务器优化与监测
 [15. 服务器调制、调试和测试](https://www.yuque.com/u39624144/zvaea9/xozozt5a6b668adg)
-
-# 参考
-## <font style="color:#000000;">TinyWebServer</font>
-![](https://cdn.nlark.com/yuque/0/2024/png/40997209/1725853781290-697d74cf-cf8a-4034-952e-d088f5a2a701.png)
-
-GitHub地址：[https://github.com/qinguoyi/TinyWebServer](https://github.com/qinguoyi/TinyWebServer)
-
-+ [<font style="color:#2F4BDA;">小白视角：一文读懂社长的TinyWebServer</font>](https://huixxi.github.io/2020/06/02/%E5%B0%8F%E7%99%BD%E8%A7%86%E8%A7%92%EF%BC%9A%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E7%A4%BE%E9%95%BF%E7%9A%84TinyWebServer/#more)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 01 线程同步机制封装类</font>](https://mp.weixin.qq.com/s?__biz=MzAxNzU2MzcwMw==&mid=2649274278&idx=3&sn=5840ff698e3f963c7855d702e842ec47&chksm=83ffbefeb48837e86fed9754986bca6db364a6fe2e2923549a378e8e5dec6e3cf732cdb198e2&scene=0&xtrack=1#rd)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 02 半同步半反应堆线程池（上）</font>](https://mp.weixin.qq.com/s?__biz=MzAxNzU2MzcwMw==&mid=2649274278&idx=4&sn=caa323faf0c51d882453c0e0c6a62282&chksm=83ffbefeb48837e841a6dbff292217475d9075e91cbe14042ad6e55b87437dcd01e6d9219e7d&scene=0&xtrack=1#rd)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 03 半同步半反应堆线程池（下）</font>](https://mp.weixin.qq.com/s/PB8vMwi8sB4Jw3WzAKpWOQ)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 04 http连接处理（上）</font>](https://mp.weixin.qq.com/s/BfnNl-3jc_x5WPrWEJGdzQ)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 05 http连接处理（中）</font>](https://mp.weixin.qq.com/s/wAQHU-QZiRt1VACMZZjNlw)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 06 http连接处理（下）</font>](https://mp.weixin.qq.com/s/451xNaSFHxcxfKlPBV3OCg)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 07 定时器处理非活动连接（上）</font>](https://mp.weixin.qq.com/s/mmXLqh_NywhBXJvI45hchA)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 08 定时器处理非活动连接（下）</font>](https://mp.weixin.qq.com/s/fb_OUnlV1SGuOUdrGrzVgg)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 09 日志系统（上）</font>](https://mp.weixin.qq.com/s/IWAlPzVDkR2ZRI5iirEfCg)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 10 日志系统（下）</font>](https://mp.weixin.qq.com/s/f-ujwFyCe1LZa3EB561ehA)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 11 数据库连接池</font>](https://mp.weixin.qq.com/s?__biz=MzAxNzU2MzcwMw==&mid=2649274326&idx=1&sn=5af78e2bf6552c46ae9ab2aa22faf839&chksm=83ffbe8eb4883798c3abb82ddd124c8100a39ef41ab8d04abe42d344067d5e1ac1b0cac9d9a3&token=1450918099&lang=zh_CN#rd)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 12 注册登录</font>](https://mp.weixin.qq.com/s?__biz=MzAxNzU2MzcwMw==&mid=2649274431&idx=4&sn=7595a70f06a79cb7abaebcd939e0cbee&chksm=83ffb167b4883871ce110aeb23e04acf835ef41016517247263a2c3ab6f8e615607858127ea6&token=1686112912&lang=zh_CN#rd)
-+ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 13 踩坑与面试题</font>](https://mp.weixin.qq.com/s?__biz=MzAxNzU2MzcwMw==&mid=2649274431&idx=1&sn=2dd28c92f5d9704a57c001a3d2630b69&chksm=83ffb167b48838715810b27b8f8b9a576023ee5c08a8e5d91df5baf396732de51268d1bf2a4e&token=1686112912&lang=zh_CN#rd)
 
 ## 其他参考
 1. [什么是 web 服务器？ - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server)
