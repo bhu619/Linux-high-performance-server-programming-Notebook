@@ -1,5 +1,9 @@
-# 项目总结
-<font style="color:#000000;">项目准备过程中，主要阅读了</font>**<font style="color:#000000;background-color:#FBDE28;">《Linux 高性能服务器编程》游双 </font>**<font style="color:#000000;">一书。源码参考的是：</font>[TinyWebServer](https://github.com/qinguoyi/TinyWebServer)，我在此源码的基础上做了一定的<font style="color:#DF2A3F;">优化和修改</font>。
+## 目录
+| [概述](#概述) |[《Linux 高性能服务器编程》阅读笔记](#《Linux 高性能服务器编程》学习笔记) |[其他参考](#其他参考) |
+|:--------:|:--------:|:--------:|
+
+## 概述
+项目准备过程中，主要阅读了 **《Linux 高性能服务器编程》 游双** 一书。源码参考的是：[TinyWebServer](https://github.com/qinguoyi/TinyWebServer)，我在此源码的基础上做了一定的 **优化和修改**。
 
 **我的代码：**[Github: myWebserver: 我的C++服务器项目](https://github.com/bhu619/myWebserver)
 
@@ -89,7 +93,7 @@
 ## 其他参考
 1. [什么是 web 服务器？ - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server)
 2. [基于 Linux 的 web 服务器_基于linux系统的webserve服务器开发-CSDN博客](https://blog.csdn.net/qq_42370809/article/details/126753879)
-3. [代码随想录项目精讲系列-webserver.pdf](https://www.yuque.com/attachments/yuque/0/2024/pdf/40997209/1720596301277-75d1fb45-ecdf-4998-8c0c-e113aa6fba40.pdf) 密码：`dmsxlwb0624`
+3. [代码随想录项目精讲系列-webserver.pdf](https://www.yuque.com/attachments/yuque/0/2024/pdf/40997209/1720596301277-75d1fb45-ecdf-4998-8c0c-e113aa6fba40.pdf)  密码：`dmsxlwb0624`
 4. [Linux高性能服务器编程.pdf](https://www.yuque.com/attachments/yuque/0/2024/pdf/40997209/1724151873130-23d63211-4809-40ed-abb9-03a6b8441507.pdf)
 5. [从零开始自制实现C++ High-Performance WebServer 全流程记录_c++ webserver项目 速成-CSDN博客](https://love6.blog.csdn.net/article/details/123754194)
 6. [从零开始实现C++ TinyWebServer_JehanRio的博客-CSDN博客](https://blog.csdn.net/weixin_51322383/category_12307428.html)
