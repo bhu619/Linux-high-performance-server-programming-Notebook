@@ -1,46 +1,117 @@
-# 《Linux 高性能服务器编程》
-[Linux高性能服务器编程.pdf](https://www.yuque.com/attachments/yuque/0/2024/pdf/40997209/1724151873130-23d63211-4809-40ed-abb9-03a6b8441507.pdf?_lake_card=%7B%22src%22%3A%22https%3A%2F%2Fwww.yuque.com%2Fattachments%2Fyuque%2F0%2F2024%2Fpdf%2F40997209%2F1724151873130-23d63211-4809-40ed-abb9-03a6b8441507.pdf%22%2C%22name%22%3A%22Linux%E9%AB%98%E6%80%A7%E8%83%BD%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%BC%96%E7%A8%8B.pdf%22%2C%22size%22%3A34037912%2C%22ext%22%3A%22pdf%22%2C%22source%22%3A%22%22%2C%22status%22%3A%22done%22%2C%22download%22%3Atrue%2C%22taskId%22%3A%22ub10bcc41-fb43-47a3-b806-ba5054bc449%22%2C%22taskType%22%3A%22upload%22%2C%22type%22%3A%22application%2Fpdf%22%2C%22__spacing%22%3A%22both%22%2C%22mode%22%3A%22title%22%2C%22id%22%3A%22uef4188be%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%2C%22card%22%3A%22file%22%7D)
+# 项目总结
+<font style="color:#000000;">项目准备过程中，主要阅读了</font>**<font style="color:#000000;background-color:#FBDE28;">《Linux 高性能服务器编程》游双 </font>**<font style="color:#000000;">一书。源码参考的是：</font>[TinyWebServer](https://github.com/qinguoyi/TinyWebServer)，我在此源码的基础上做了一定的<font style="color:#DF2A3F;">优化和修改</font>。
 
-# 阅读笔记
-## 书本中的样例代码
-[实战 1：TCP通信实现（服务器端和客户端）](https://www.yuque.com/u39624144/zvaea9/xsil4chqwb5qqc0h#p2OYs)<br />
-[实战 2：使用 MSG_OOB 选项发送带外数据](https://www.yuque.com/u39624144/zvaea9/xsil4chqwb5qqc0h#rvyoz)<br />
-[实战 3：实现一个简单的 CGI 服务器](https://www.yuque.com/u39624144/zvaea9/coklc3naf35zmiqs#uhNNJ)<br />
-[实战 4：测试 UID 和 EUID 的区别](https://www.yuque.com/u39624144/zvaea9/uykylirmss5wl757#euBnM)<br />
-[实战 5：使用 setsid() 创建一个新的会话和进程组](https://www.yuque.com/u39624144/zvaea9/uykylirmss5wl757#a1Hsx)<br />
-[实战 6：select 调用同时接收普通数据和带外数据](https://www.yuque.com/u39624144/zvaea9/ypvqw1ip7m8g06iw#Higr8)<br />
-[实战 7：使用 SIGURG 信号检测带外数据是否到达](https://www.yuque.com/u39624144/zvaea9/lmeph1l89eka5260#iDHr9)<br />
-[实战 8：使用 SO_SNDTIMEO 选项设置定时](https://www.yuque.com/u39624144/zvaea9/yp17h7vn7pyqeg8u#yGpN7)<br />
-[实战 9：利用 alarm 函数周期性触发 SIGALRM 信号](https://www.yuque.com/u39624144/zvaea9/yp17h7vn7pyqeg8u#mQQlT)<br />
-[实战 10：利用 Libevent 库实现一个“Hello World”程序](https://www.yuque.com/u39624144/zvaea9/bn1zz8726fc80b0g#mo5Ik)<br />
-[实战 11：在进程间传递文件描述符](https://www.yuque.com/u39624144/zvaea9/uqu0tqep71gn5x5n#t0560)<br />
-[实战 12：死锁举例](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#zI94q)<br />
-[实战 13：使用条件变量模拟实现生产者—消费者问题](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#h3K6i)<br />
-[实战 14：多线程环境中，使用fork调用产生的死锁问题](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#AR15e)<br />
-[实战 15：在一个线程中统一处理所有信号](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#HA174)<br />
+**我的代码：**[Github: myWebserver: 我的C++服务器项目](https://github.com/bhu619/myWebserver)
+
+**我的 Webserver 项目总结：**[WebServer 项目解读 / 代码分析 / 改进](https://www.yuque.com/u39624144/zvaea9/aqktb26g923rsiv5)
+
+**我的《Linux 高性能服务器编程》学习笔记：**[《Linux 高性能服务器编程》总结_红茶川的博客-CSDN博客](https://blog.csdn.net/teriri_/category_12760091.html?spm=1001.2014.3001.5482)
+
+**我的 CSDN 博客：**[红茶川-CSDN博客](https://blog.csdn.net/Teriri_?spm=1000.2115.3001.5343)，上面同步更新了所有内容。
+
+# 《Linux 高性能服务器编程》学习笔记
+### 书本中的样例代码
+书中的部分样例代码，我都在笔记中给出了可以运行的代码，大家可以编译运行一下看看效果。
+
+所有代码我都放在了 Github 仓库：[《Linux 高性能服务器编程》—游双，阅读笔记及相关代码](https://github.com/bhu619/Linux-high-performance-server-programming-Notebook)
+
+完整笔记：[《Linux 高性能服务器编程》总结_红茶川的博客-CSDN博客](https://blog.csdn.net/teriri_/category_12760091.html?spm=1001.2014.3001.5482)
+
+---
+
+[实战 1：TCP通信实现（服务器端和客户端）](https://www.yuque.com/u39624144/zvaea9/xsil4chqwb5qqc0h#p2OYs)
+
+[实战 2：使用 MSG_OOB 选项发送带外数据](https://www.yuque.com/u39624144/zvaea9/xsil4chqwb5qqc0h#rvyoz)
+
+[实战 3：实现一个简单的 CGI 服务器](https://www.yuque.com/u39624144/zvaea9/coklc3naf35zmiqs#uhNNJ)
+
+[实战 4：测试 UID 和 EUID 的区别](https://www.yuque.com/u39624144/zvaea9/uykylirmss5wl757#euBnM)
+
+[实战 5：使用 setsid() 创建一个新的会话和进程组](https://www.yuque.com/u39624144/zvaea9/uykylirmss5wl757#a1Hsx)
+
+[实战 6：select 调用同时接收普通数据和带外数据](https://www.yuque.com/u39624144/zvaea9/ypvqw1ip7m8g06iw#Higr8)
+
+[实战 7：使用 SIGURG 信号检测带外数据是否到达](https://www.yuque.com/u39624144/zvaea9/lmeph1l89eka5260#iDHr9)
+
+[实战 8：使用 SO_SNDTIMEO 选项设置定时](https://www.yuque.com/u39624144/zvaea9/yp17h7vn7pyqeg8u#yGpN7)
+
+[实战 9：利用 alarm 函数周期性触发 SIGALRM 信号](https://www.yuque.com/u39624144/zvaea9/yp17h7vn7pyqeg8u#mQQlT)
+
+[实战 10：利用 Libevent 库实现一个“Hello World”程序](https://www.yuque.com/u39624144/zvaea9/bn1zz8726fc80b0g#mo5Ik)
+
+[实战 11：在进程间传递文件描述符](https://www.yuque.com/u39624144/zvaea9/uqu0tqep71gn5x5n#t0560)
+
+[实战 12：死锁举例](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#zI94q)
+
+[实战 13：使用条件变量模拟实现生产者—消费者问题](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#h3K6i)
+
+[实战 14：多线程环境中，使用fork调用产生的死锁问题](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#AR15e)
+
+[实战 15：在一个线程中统一处理所有信号](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc#HA174)
+
 [实战 16：用进程池实现简单的 CGI 服务器](https://www.yuque.com/u39624144/zvaea9/qulr4t6shwwh9kmo#eKrIS)
 
-## 第一篇 前置知识 TCP / IP 协议
-[1. C++ TinyWebServer项目总结（1. 配置安装）](https://www.yuque.com/u39624144/zvaea9/cbr8n7reuf3rgw58?view=doc_embed)<br />
-[2. C++ TinyWebServer项目总结（2. IP协议）](https://www.yuque.com/u39624144/zvaea9/ufa1lv48std8gahd?view=doc_embed)<br />
-[3. C++ TinyWebServer项目总结（3. TCP协议）](https://www.yuque.com/u39624144/zvaea9/xbfffzg2tl63cqda?view=doc_embed)<br />
-[4. C++ TinyWebServer项目总结（4. 访问一个网页的全过程）](https://www.yuque.com/u39624144/zvaea9/kk0kn0i6bcd2iqq0?view=doc_embed)
+### 第一篇 前置知识 TCP / IP 协议
+[1. IP协议](https://www.yuque.com/u39624144/zvaea9/ufa1lv48std8gahd)
 
-## 第二篇 深入解析高性能服务器编程
-[5. C++ TinyWebServer项目总结（5. Linux网络编程基础API）](https://www.yuque.com/u39624144/zvaea9/xsil4chqwb5qqc0h?view=doc_embed)<br />
-[6. C++ TinyWebServer项目总结（6. 高级 I/O 函数）](https://www.yuque.com/u39624144/zvaea9/coklc3naf35zmiqs?view=doc_embed)<br />
-[7. C++ TinyWebServer项目总结（7. Linux服务器程序规范）](https://www.yuque.com/u39624144/zvaea9/uykylirmss5wl757?view=doc_embed)<br />
-[8. C++ TinyWebServer项目总结（8. 高性能服务器程序框架）](https://www.yuque.com/u39624144/zvaea9/ocl1e8vzzdes4zgn?view=doc_embed)<br />
-[9. C++ TinyWebServer项目总结（9. I/O 复用）](https://www.yuque.com/u39624144/zvaea9/ypvqw1ip7m8g06iw?view=doc_embed)<br />
-[10. C++ TinyWebServer项目总结（10. 信号）](https://www.yuque.com/u39624144/zvaea9/lmeph1l89eka5260?view=doc_embed)<br />
-[11. C++ TinyWebServer项目总结（11. 定时器）](https://www.yuque.com/u39624144/zvaea9/yp17h7vn7pyqeg8u?view=doc_embed)<br />
-[12. C++ TinyWebServer项目总结（12. 高性能I/O框架库Libevent）](https://www.yuque.com/u39624144/zvaea9/bn1zz8726fc80b0g?view=doc_embed)<br />
-[13. C++ TinyWebServer项目总结（13. 多进程编程）](https://www.yuque.com/u39624144/zvaea9/uqu0tqep71gn5x5n?view=doc_embed)<br />
-[14. C++ TinyWebServer项目总结（14. 多线程编程）](https://www.yuque.com/u39624144/zvaea9/gc463q2ptu28gzpc?view=doc_embed)<br />
-[15. C++ TinyWebServer项目总结（15. 进程池和线程池）](https://www.yuque.com/u39624144/zvaea9/qulr4t6shwwh9kmo)
+[2. TCP协议](https://www.yuque.com/u39624144/zvaea9/xbfffzg2tl63cqda)
 
-## 第三篇 高性能服务器优化与监测
-[16. C++ TinyWebServer项目总结（16. 服务器调制、调试和测试）](https://www.yuque.com/u39624144/zvaea9/xozozt5a6b668adg)
+[3. 访问一个网页的全过程](https://www.yuque.com/u39624144/zvaea9/kk0kn0i6bcd2iqq0)
 
-# 其他参考
-[什么是 web 服务器？ - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server)<br />[基于 Linux 的 web 服务器_基于linux系统的webserve服务器开发-CSDN博客](https://blog.csdn.net/qq_42370809/article/details/126753879)
+### 第二篇 深入解析高性能服务器编程
+[4. Linux网络编程基础API](https://www.yuque.com/u39624144/zvaea9/xsil4chqwb5qqc0h)
+
+[5. 高级 I/O 函数](https://www.yuque.com/u39624144/zvaea9/coklc3naf35zmiqs)
+
+[6. Linux服务器程序规范](https://www.yuque.com/u39624144/zvaea9/uykylirmss5wl757)
+
+[7. 高性能服务器程序框架](https://www.yuque.com/u39624144/zvaea9/ocl1e8vzzdes4zgn)
+
+[7. 高性能服务器程序框架](https://www.yuque.com/u39624144/zvaea9/ocl1e8vzzdes4zgn)
+
+[8. I/O 复用](https://www.yuque.com/u39624144/zvaea9/ypvqw1ip7m8g06iw)
+
+[9. 信号](https://www.yuque.com/u39624144/zvaea9/lmeph1l89eka5260)
+
+[10. 定时器](https://www.yuque.com/u39624144/zvaea9/yp17h7vn7pyqeg8u)
+
+[11. 高性能I/O框架库Libevent](https://www.yuque.com/u39624144/zvaea9/bn1zz8726fc80b0g)
+
+[12. 多进程编程](https://www.yuque.com/u39624144/zvaea9/uqu0tqep71gn5x5n)
+
+[14. 进程池和线程池](https://www.yuque.com/u39624144/zvaea9/qulr4t6shwwh9kmo)
+
+[14. 进程池和线程池](https://www.yuque.com/u39624144/zvaea9/qulr4t6shwwh9kmo)
+
+### 第三篇 高性能服务器优化与监测
+[15. 服务器调制、调试和测试](https://www.yuque.com/u39624144/zvaea9/xozozt5a6b668adg)
+
+# 参考
+## <font style="color:#000000;">TinyWebServer</font>
+![](https://cdn.nlark.com/yuque/0/2024/png/40997209/1725853781290-697d74cf-cf8a-4034-952e-d088f5a2a701.png)
+
+GitHub地址：[https://github.com/qinguoyi/TinyWebServer](https://github.com/qinguoyi/TinyWebServer)
+
++ [<font style="color:#2F4BDA;">小白视角：一文读懂社长的TinyWebServer</font>](https://huixxi.github.io/2020/06/02/%E5%B0%8F%E7%99%BD%E8%A7%86%E8%A7%92%EF%BC%9A%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E7%A4%BE%E9%95%BF%E7%9A%84TinyWebServer/#more)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 01 线程同步机制封装类</font>](https://mp.weixin.qq.com/s?__biz=MzAxNzU2MzcwMw==&mid=2649274278&idx=3&sn=5840ff698e3f963c7855d702e842ec47&chksm=83ffbefeb48837e86fed9754986bca6db364a6fe2e2923549a378e8e5dec6e3cf732cdb198e2&scene=0&xtrack=1#rd)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 02 半同步半反应堆线程池（上）</font>](https://mp.weixin.qq.com/s?__biz=MzAxNzU2MzcwMw==&mid=2649274278&idx=4&sn=caa323faf0c51d882453c0e0c6a62282&chksm=83ffbefeb48837e841a6dbff292217475d9075e91cbe14042ad6e55b87437dcd01e6d9219e7d&scene=0&xtrack=1#rd)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 03 半同步半反应堆线程池（下）</font>](https://mp.weixin.qq.com/s/PB8vMwi8sB4Jw3WzAKpWOQ)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 04 http连接处理（上）</font>](https://mp.weixin.qq.com/s/BfnNl-3jc_x5WPrWEJGdzQ)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 05 http连接处理（中）</font>](https://mp.weixin.qq.com/s/wAQHU-QZiRt1VACMZZjNlw)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 06 http连接处理（下）</font>](https://mp.weixin.qq.com/s/451xNaSFHxcxfKlPBV3OCg)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 07 定时器处理非活动连接（上）</font>](https://mp.weixin.qq.com/s/mmXLqh_NywhBXJvI45hchA)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 08 定时器处理非活动连接（下）</font>](https://mp.weixin.qq.com/s/fb_OUnlV1SGuOUdrGrzVgg)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 09 日志系统（上）</font>](https://mp.weixin.qq.com/s/IWAlPzVDkR2ZRI5iirEfCg)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 10 日志系统（下）</font>](https://mp.weixin.qq.com/s/f-ujwFyCe1LZa3EB561ehA)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 11 数据库连接池</font>](https://mp.weixin.qq.com/s?__biz=MzAxNzU2MzcwMw==&mid=2649274326&idx=1&sn=5af78e2bf6552c46ae9ab2aa22faf839&chksm=83ffbe8eb4883798c3abb82ddd124c8100a39ef41ab8d04abe42d344067d5e1ac1b0cac9d9a3&token=1450918099&lang=zh_CN#rd)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 12 注册登录</font>](https://mp.weixin.qq.com/s?__biz=MzAxNzU2MzcwMw==&mid=2649274431&idx=4&sn=7595a70f06a79cb7abaebcd939e0cbee&chksm=83ffb167b4883871ce110aeb23e04acf835ef41016517247263a2c3ab6f8e615607858127ea6&token=1686112912&lang=zh_CN#rd)
++ [<font style="color:#2F4BDA;">最新版Web服务器项目详解 - 13 踩坑与面试题</font>](https://mp.weixin.qq.com/s?__biz=MzAxNzU2MzcwMw==&mid=2649274431&idx=1&sn=2dd28c92f5d9704a57c001a3d2630b69&chksm=83ffb167b48838715810b27b8f8b9a576023ee5c08a8e5d91df5baf396732de51268d1bf2a4e&token=1686112912&lang=zh_CN#rd)
+
+## 其他参考
+1. [什么是 web 服务器？ - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server)
+2. [基于 Linux 的 web 服务器_基于linux系统的webserve服务器开发-CSDN博客](https://blog.csdn.net/qq_42370809/article/details/126753879)
+3. [代码随想录项目精讲系列-webserver.pdf](https://www.yuque.com/attachments/yuque/0/2024/pdf/40997209/1720596301277-75d1fb45-ecdf-4998-8c0c-e113aa6fba40.pdf) 密码：`<font style="color:rgb(51, 51, 51);">dmsxlwb0624</font>`
+4. [Linux高性能服务器编程.pdf](https://www.yuque.com/attachments/yuque/0/2024/pdf/40997209/1724151873130-23d63211-4809-40ed-abb9-03a6b8441507.pdf)
+5. [从零开始自制实现C++ High-Performance WebServer 全流程记录_c++ webserver项目 速成-CSDN博客](https://love6.blog.csdn.net/article/details/123754194)
+6. [从零开始实现C++ TinyWebServer_JehanRio的博客-CSDN博客](https://blog.csdn.net/weixin_51322383/category_12307428.html)
+
