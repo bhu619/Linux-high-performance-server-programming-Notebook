@@ -1,3 +1,14 @@
+## 目录
+
+- [目录](#目录)
+- [概述](#概述)
+- [《Linux 高性能服务器编程》学习笔记](#linux-高性能服务器编程学习笔记)
+  - [书本中的样例代码](#书本中的样例代码)
+  - [第一篇 前置知识 TCP / IP 协议](#第一篇-前置知识-tcp--ip-协议)
+  - [第二篇 深入解析高性能服务器编程](#第二篇-深入解析高性能服务器编程)
+  - [第三篇 高性能服务器优化与监测](#第三篇-高性能服务器优化与监测)
+- [其他参考](#其他参考)
+
 ## 概述
 项目准备过程中，主要阅读了 **《Linux 高性能服务器编程》 游双** 一书。源码参考的是：[TinyWebServer](https://github.com/qinguoyi/TinyWebServer)，我在此源码的基础上做了一定的 **优化和修改**。
 
@@ -5,17 +16,17 @@
 
 **我的 Webserver 项目总结：**[WebServer 项目解读 / 代码分析 / 改进](https://www.yuque.com/u39624144/zvaea9/aqktb26g923rsiv5)
 
-**我的《Linux 高性能服务器编程》学习笔记：**[《Linux 高性能服务器编程》总结_红茶川的博客-CSDN博客](https://blog.csdn.net/teriri_/category_12760091.html?spm=1001.2014.3001.5482)
+**我的《Linux 高性能服务器编程》学习笔记：**[《Linux 高性能服务器编程》总结—红茶川的CSDN博客](https://blog.csdn.net/teriri_/category_12760091.html?spm=1001.2014.3001.5482)
 
-**我的 CSDN 博客：**[红茶川-CSDN博客](https://blog.csdn.net/Teriri_?spm=1000.2115.3001.5343)，上面同步更新了所有内容。
+**我的 CSDN 博客：**[红茶川—CSDN博客](https://blog.csdn.net/Teriri_?spm=1000.2115.3001.5343)，上面同步更新了所有内容。
 
 ## 《Linux 高性能服务器编程》学习笔记
 ### 书本中的样例代码
 书中的部分样例代码，我都在笔记中给出了可以运行的代码，大家可以编译运行一下看看效果。
 
-所有代码我都放在了 Github 仓库：[《Linux 高性能服务器编程》—游双，阅读笔记及相关代码](https://github.com/bhu619/Linux-high-performance-server-programming-Notebook)
+所有代码我都放在了 Github 仓库：[bhu619/Linux-high-performance-server-programming-Notebook](https://github.com/bhu619/Linux-high-performance-server-programming-Notebook)
 
-完整笔记：[《Linux 高性能服务器编程》总结_红茶川的博客-CSDN博客](https://blog.csdn.net/teriri_/category_12760091.html?spm=1001.2014.3001.5482)
+完整笔记：[《Linux 高性能服务器编程》总结—红茶川的CSDN博客](https://blog.csdn.net/teriri_/category_12760091.html?spm=1001.2014.3001.5482)
 
 ---
 
